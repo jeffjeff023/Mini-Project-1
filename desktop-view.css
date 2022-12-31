@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -22,13 +22,15 @@ body {
     color: white;
 }
 
-.container {
-    display: flex;
+body .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
     font-family: 'Barlow Condensed', sans-serif;
     margin-top: 5vh;
     margin-left: 3vw;
+    overflow: hidden;
 }
 
 .header-left {
@@ -51,14 +53,14 @@ body {
 .header-right {
     background: inherit;
     backdrop-filter: blur(4rem);
-    width: 100%;
+    
 }
 
 .row {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 10vw 10vw 10vw 10vw ;
-    padding: 4vh 10vw 4vh 0;
+    padding: 4vh 0;
     text-align: center;
 }
 
@@ -68,7 +70,8 @@ body {
     color: white;
     letter-spacing: 0.27vw;
     font-weight: 400;
-    padding: 4vh 0;
+    padding-bottom: 3.6vh;
+
 }
 
 .col span {
@@ -77,8 +80,11 @@ body {
 }
 
 main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-items: center;
+    height: 80vh ;
 }
 
 .left {
@@ -89,7 +95,7 @@ main {
     gap: 2.4rem;
     width: 44.5rem;
     height: 38.2rem;
-    margin: 18% 0 0 10%;    
+    margin-inline: auto;
 }
 
 .p1 {
@@ -111,17 +117,14 @@ main {
     line-height: 32px;
 }
 
-
 main .right {
     border-radius: 50%;
     background-color: white;
-    width: 27rem;
-    height: 27rem;
+    width: 19.03vw;
+    height: 19.03vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25%;
-    margin-left: 30%;
 }
 
 main .right .p4 {
@@ -134,15 +137,3 @@ main .right .p4 {
 nav a:focus {
     border-bottom: 2px solid white;
 } 
-
-@media (max-width: 1240px) {
-    .col a {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 940px) {
-    .col a {
-        font-size: 1em;
-    }
-}
