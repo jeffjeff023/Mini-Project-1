@@ -13,19 +13,18 @@
 
     <link
       rel="stylesheet"
-      media="screen and (min-width: 769px)"
       href="desktop-view.css"
     />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       media="screen and (max-width: 768px)"
       href="tablet-view.css"
-    />
+    /> -->
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body>
+  <body class="body">
     <div class="container">
       <header>
         <div class="header-left">
@@ -39,16 +38,16 @@
         <div class="header-right">
           <div class="row">
             <div class="col">
-              <a href="#"><span>00</span>home</a>
+              <a href="#" id="home"><span>00</span>home</a>
             </div>
             <div class="col">
-              <a href="#"><span>01</span>destination</a>
+              <a href="#" id="destination"><span>01</span>destination</a>
             </div>
             <div class="col">
-              <a href="#"><span>02</span>crew</a>
+              <a href="#" id="crew"><span>02</span>crew</a>
             </div>
             <div class="col">
-              <a href="#"><span>03</span>technology</a>
+              <a href="#" id="technology"><span>03</span>technology</a>
             </div>
           </div>
         </div>
@@ -56,24 +55,74 @@
     </div>
 
     <main>
-      <div class="left">
-
-          <p class="p1">So, you want to travel to</p>
-          <p class="p2">Space</p>
-          <p class="p3">
-            Let's face it; if you want to go to space, you might as well
-            genuinely go to outer space and not hover kind of on the edge of it.
-            Well sit back, and relax because we'll give you a truly out of this
-            world experience!
-          </p>
-
+      <!-- Home -->
+      <div class="home-wrapper">
+        <div class="home">
+          <div class="left">
+            <p class="p1">So, you want to travel to</p>
+            <p class="p2">Space</p>
+            <p class="p3">
+              Let's face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we'll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+          <div class="right">
+            <a class="p4" href="#">explore</a>
+          </div>
         </div>
-        <div class="right">
-          <a class="p4" href="#">explore</a>
       </div>
 
-    
-      
+      <!-- destination -->
+      <div class="destination-wrapper">
+        <div class="destination">
+          <div class="left">
+            <p><span>01</span>pick your destination</p>
+            <img id="planet-img" src="images/destination/image-moon.webp" alt="moon"/>
+          </div>
+          <div class="right">
+            <div class="navRight">
+  
+              <a id="moon" href="#">moon</a>
+              <a id="mars" href="#">mars</a>
+              <a id="europa" href="#">europa</a>
+              <a id="titan" href="#">titan</a>
+
+            </div>
+            
+
+            <h1 id="planet">Moon</h1>
+            <p id="description" class="description">
+              See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+
+            <div class="right-bottom">
+              <div class="right-bottom-1">
+                <p>Avg. distance</p>
+                <p id="distance">384,400 km</p>
+              </div>
+              <div class="right-bottom-2">
+                <p>Est. travel time</p>
+                <p id="time">3 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
